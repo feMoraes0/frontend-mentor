@@ -1,11 +1,12 @@
 import React from 'react';
+import './App.css';
 
 function App() {
   return (
     <main>
-      <section>
+      <header>
         <h1>Projects</h1>
-      </section>
+      </header>
     </main>
   );
 }
