@@ -21,7 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "commit": "cz"
+    "commit": "cz",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -43,11 +44,17 @@
   },
   "devDependencies": {
     "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^4.3.8"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run test -- --watchAll=false"
     }
   }
 }
