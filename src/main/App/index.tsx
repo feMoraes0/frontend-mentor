@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Header, HeaderText }  from './style';
+import { Article, ArticlesBox, Container, Header, HeaderText }  from './style';
 
 function App() {
   return (
@@ -7,6 +7,20 @@ function App() {
       <Header>
         <HeaderText>Projects</HeaderText>
       </Header>
+      <ArticlesBox>
+        <Article>
+          empty
+        </Article>
+        <Article>
+          empty
+        </Article>
+        <Article>
+          empty
+        </Article>
+        <Article>
+          empty
+        </Article>
+      </ArticlesBox>
     </Container>
   );
 }
