@@ -1,9 +1,9 @@
 import React from 'react';
-import { Project, LinkButton, ProjectFooter, ProjectsSection, ProjectName, Container, Header, HeaderText, ProjectDescription, ProjectBoxContent, ProjectImagePreview }  from './style';
+import { Project, LinkButton, ProjectFooter, ProjectsSection, ProjectName, Container, Header, HeaderText, ProjectDescription, ProjectBoxContent, ProjectImagePreview, }  from './style';
 
-import OrderSummaryComponentPreview from '../projects/OrderSummaryComponent/design/desktop-preview.jpg'
+import OrderSummaryComponentPreview from '../projects/OrderSummaryComponent/design/desktop-preview.jpg';
 
-function App() {
+const App = () => {
   return (
     <Container>
       <Header>
@@ -24,18 +24,11 @@ function App() {
             </ProjectFooter>
           </ProjectBoxContent>
         </Project>
-        <Project>
-          empty
-        </Project>
-        <Project>
-          empty
-        </Project>
-        <Project>
-          empty
-        </Project>
       </ProjectsSection>
     </Container>
   );
 }
 
+
+export const AppPath = '/';
 export default App;
