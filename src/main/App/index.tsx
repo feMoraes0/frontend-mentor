@@ -1,5 +1,7 @@
 import React from 'react';
-import { Article, ArticlesBox, Container, Header, HeaderText }  from './style';
+import { Project, LinkButton, ProjectFooter, ProjectsSection, ProjectName, Container, Header, HeaderText, ProjectDescription, ProjectBoxContent, ProjectImagePreview }  from './style';
+
+import OrderSummaryComponentPreview from '../projects/OrderSummaryComponent/design/desktop-preview.jpg'
 
 function App() {
   return (
@@ -7,20 +9,31 @@ function App() {
       <Header>
         <HeaderText>Projects</HeaderText>
       </Header>
-      <ArticlesBox>
-        <Article>
+      <ProjectsSection>
+        <Project>
+          <ProjectImagePreview src={OrderSummaryComponentPreview} alt='Order summary component preview' />
+          <ProjectBoxContent>
+            <ProjectName>
+              Order summary Component
+            </ProjectName>
+            <ProjectDescription>
+              A perfect project for newbies who are starting to build confidence with layouts!
+            </ProjectDescription>
+            <ProjectFooter>
+              <LinkButton bgColor={'hsl(245, 75%, 52%)'}>Access</LinkButton>
+            </ProjectFooter>
+          </ProjectBoxContent>
+        </Project>
+        <Project>
           empty
-        </Article>
-        <Article>
+        </Project>
+        <Project>
           empty
-        </Article>
-        <Article>
+        </Project>
+        <Project>
           empty
-        </Article>
-        <Article>
-          empty
-        </Article>
-      </ArticlesBox>
+        </Project>
+      </ProjectsSection>
     </Container>
   );
 }
