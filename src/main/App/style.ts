@@ -61,7 +61,7 @@ export const ProjectFooter = styled.div`
 `;
 
 interface LinkButtonInterface {
-  bgColor: String|any;
+  bgColor: string;
 }
 
 export const LinkButton = styled.a<LinkButtonInterface>`
